@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: monospace;
+  color: #34fd58;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c1c1c;
+  font-size: 15px;
+  border-bottom: solid #34fd58;
+  position: fixed;
+  width: 100%;
+  height: 2rem;
+  padding: 2rem 1rem;
+}
+.nav-items {
+  width: 68%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-item {
+  text-decoration: none;
+  color: #34fd58;
+}
+.nav-item:hover {
+  border-bottom: solid #34fd58;
+}
+.btn-login {
+  width: 6rem;
+  height: 2rem;
+  color: #1c1c1c;
+  background-color: #34fd58;
+  border: none;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.btn-login:hover {
+  border: solid #34fd58;
+  color: #34fd58;
+  background-color: #1c1c1c;
+}
+.conteudo-tela {
+  width: 100%;
+  height: 100%;
+}
+.side-bar {
+  width: 5rem;
+  height: 100%;
+  background-color: #1c1c1c;
+  overflow: hidden;
+  position: fixed;
+  top: 99px;
+  transition: 0.2s;
+  border-right: solid #34fd58;
+}
+.side-bar:hover {
+  width: 16rem;
+}
+.open-side-bar {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  cursor: pointer;
+  font-size: 24px;
+}
+.open-side-bar :hover {
+  background-color: #34fd58;
+  color: #1c1c1c;
+}
+.side-items {
+  padding: 0rem 2px 0rem 2rem;
+  height: 100%;
+  list-style: none;
+  cursor: pointer;
+}
+.side-item :hover {
+  background-color: #34fd58;
+  color: #1c1c1c;
+}
+.side-item {
+  width: 100%;
+}
+.side-items li a {
+  width: 100%;
+  transition: 0.2s;
+}
+.side-items a {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #34fd58;
+  font-size: 20px;
+  border-radius: 8px;
+}
+.side-item a .side-icon {
+  transition: 0.2s;
+}
+.side-items a .side-txt {
+  margin-left: 2rem;
+  transition: 0.2s;
+}
+.conteudo {
+  width: 100%;
+  height: 100%;
+}
+.tela {
+  width: 100%;
+  height: 900vh;
+  background-color: #1c1c1c;
+}
+
+/* Consulta de CEP */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+main .container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1c1c1c;
+  display: flex;
+  margin: auto auto;
+  align-items: center;
+  padding-top: 10rem;
+}
+main .container .input-box .title {
+  font-size: 30px;
+}
+main .container .input-box input {
+  width: 100%;
+  color: #34fd58;
+  border: solid #34fd58;
+  background-color: #1c1c1c;
+  height: 3rem;
+  font-size: 24px;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+main .container .input-box .consultar-btn {
+  color: #1c1c1c;
+  width: 100%;
+  height: 3rem;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-top: 1rem;
+  background-color: #34fd58;
+  border: none;
+  transition: 0.2s;
+}
+main .container .input-box .consultar-btn:hover {
+  color: #34fd58;
+  background-color: #1c1c1c;
+  border: solid #34fd58;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.result-container {
+  font-size: 24px;
+  margin-top: 2rem;
+  width: 27rem;
+}
+.result-container div .info {
+  display: flex;
+  justify-content: space-between;
+}
+@media(max-width: 530px){
+  .input-box{
+    width: 80vw;
+  }
+  .result-container{
+    width: 80vw;
+  }
+}
+
+/* Alterar imagem de pet */
+
+main .container .conteudo{
+  width: 27rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .container .btn-alterar {
+  color: #1c1c1c;
+  width: 100%;
+  height: 3rem;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-top: 1rem;
+  background-color: #34fd58;
+  border: none;
+  transition: 0.2s;
+}
+main .container .btn-alterar:hover {
+  color: #34fd58;
+  background-color: #1c1c1c;
+  border: solid #34fd58;
+}
+main .container .img-container{
+  height: 27rem;
+  width: 27rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container .img-container img{
+  max-height: 27rem;
+  max-width: 100vw;
+}
+@media(max-width:460px){
+  .container{
+    width: 80vw;
+  }
+  .conteudo{
+    width: 80vw;
+  }
+}

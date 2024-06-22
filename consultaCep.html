@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="consultaCep.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="input-box">
+          <h1 class="title">Digite o CEP para consulta:</h1>
+          <input
+            type="number"
+            name="cep"
+            id="cep"
+            placeholder="Digite aqui o seu CEP"
+          />
+          <button class="consultar-btn" onclick="consultarCep()">
+            Consultar
+          </button>
+        </div>
+        <section class="result-container">
+          
+        </section>
+      </section>
+    </main>
+  </body>
+  <script src="consultaCep.js"></script>
+</html>
